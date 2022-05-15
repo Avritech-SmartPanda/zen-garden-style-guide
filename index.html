@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Style Guide | WDD 331 - Group 06</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400,400i,700,700i");
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        body {
+            font-family: "Droid Sans", sans-serif !important;
+            background-color: #ffffff;
+            line-height: 1.5;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        label {
+            font-family: "Droid Serif", serif !important;
+
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2.6em;
+        }
+
+        h3 {
+            font-size: 2.2em;
+        }
+
+        h4 {
+            font-size: 1.4em;
+        }
+
+        h5 {
+            font-size: 1em;
+        }
+
+        h6 {
+            font-size: 1em;
+        }
+
+
+
+        .box {
+            border: 1px solid #e6e6e6;
+            border-radius: 3px;
+            background: #ffffff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            padding: 6px;
+        }
+
+
+        header {
+            background: #19191a;
+        }
+
+        .logo {
+            background-color: #239fbc;
+            width: 120px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .logo {
+                width: 180px;
+            }
+        }
+
+
+
+        /* -------------------------------- 
+
+Page title 
+
+-------------------------------- */
+
+        main>h1 {
+            color: #19191a;
+        }
+
+        @media only screen and (min-width: 1600px) {
+            main>h1 {
+                color: #ffffff;
+            }
+        }
+
+        /* -------------------------------- 
+
+Typography 
+
+-------------------------------- */
+
+        h1,
+        h2 {
+            color: #19191a;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 300;
+            line-height: 1.2;
+            margin: 0 0 .4em;
+
+        }
+
+        @media only screen and (min-width: 768px) {
+            h1 {
+                font-size: 3.2rem;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        h2 {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 1em 0;
+        }
+
+        @media only screen and (min-width: 768px) {
+            h2 {
+                font-size: 1.8rem;
+                margin: 1em 0 1.4em;
+            }
+        }
+
+        section>h2::before {
+            /* number before each section title */
+            color: silver;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            color: #58585b;
+        }
+
+        p a {
+            color: #239fbc;
+            text-decoration: underline;
+        }
+
+        @media only screen and (min-width: 768px) {
+            p {
+                font-size: 1.6rem;
+                line-height: 1.6;
+            }
+        }
+
+
+
+
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-size: 1.6rem;
+        }
+
+
+        header {
+            position: fixed;
+            height: 50px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        header nav {
+            display: inline-block;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            header {
+                height: 80px;
+            }
+
+            header::after {
+                clear: both;
+                content: "";
+                display: block;
+            }
+        }
+
+        .logo {
+            display: inline-block;
+            height: 100%;
+            position: relative;
+            padding-top: 25px;
+            padding-left: 40px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: "Droid Serif", serif !important;
+        }
+
+
+
+        @media only screen and (min-width: 1600px) {
+            .logo {
+                margin-left: 5%;
+            }
+        }
+
+
+        main {
+            width: 90%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        main>h1 {
+            text-align: center;
+            margin: 3em 0;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            main {
+                padding-top: 80px;
+            }
+        }
+
+        @media only screen and (min-width: 1600px) {
+            main {
+                max-width: none;
+                padding: 120px 0 50px;
+            }
+
+            main>h1 {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                height: 80px;
+                line-height: 80px;
+                width: 400px;
+                margin: 0 0 0 -200px;
+                font-size: 2.6rem;
+                z-index: 20;
+            }
+        }
+
+        section {
+            margin: 3em 0;
+        }
+
+        section::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        section:nth-of-type(1) h2::before {
+            content: '1. ';
+        }
+
+        section:nth-of-type(2) h2::before {
+            content: '2. ';
+        }
+
+        section:nth-of-type(3) h2::before {
+            content: '3. ';
+        }
+
+        section:nth-of-type(4) h2::before {
+            content: '4. ';
+        }
+
+        section:nth-of-type(5) h2::before {
+            content: '5. ';
+        }
+
+
+
+        @media only screen and (min-width: 768px) {
+            section {
+                margin: 3em 0 5em;
+            }
+        }
+
+        @media only screen and (min-width: 1600px) {
+            section {
+                width: 48%;
+                float: left;
+                margin: 0 4% 4em 0;
+            }
+
+            section:nth-of-type(2n) {
+                margin-right: 0;
+            }
+        }
+
+
+
+
+
+
+        /* Color section - basic style */
+        .colors {
+            display: block;
+            width: 100%;
+        }
+
+        .colors li {
+            text-align: center;
+            width: 48%;
+            float: left;
+            margin: 0 4% 1em 0;
+        }
+
+        .colors li:nth-of-type(2n) {
+            margin-right: 0;
+        }
+
+        .colors .color-swatch {
+            position: relative;
+            width: 100%;
+            padding: 50% 0;
+        }
+
+
+
+
+        .colors li:nth-of-type(1) .color-swatch {
+            background: #023047;
+            color: #eaeaea;
+            font-weight: 600;
+        }
+
+        .colors li:nth-of-type(1) .color-swatch::after {
+            content: '#023047';
+        }
+
+
+        .colors li:nth-of-type(2) .color-swatch {
+            background: #239fbc;
+            color: #eaeaea;
+            font-weight: 600;
+        }
+
+        .colors li:nth-of-type(2) .color-swatch::after {
+            content: '#239fbc';
+        }
+
+
+
+        .colors li:nth-of-type(3) .color-swatch {
+            background: #FBBE04;
+            color: #023047;
+            font-weight: 600;
+        }
+
+        .colors li:nth-of-type(3) .color-swatch::after {
+            content: '#FBBE04';
+        }
+
+
+        .colors li:nth-of-type(4) .color-swatch {
+            background: #EAEAEA;
+            color: #023047;
+            font-weight: 600;
+        }
+
+        .colors li:nth-of-type(4) .color-swatch::after {
+            content: '#EAEAEA';
+        }
+
+        #colors ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+
+
+
+        .typography .box,
+        .purpose .box {
+            padding: 2em;
+        }
+
+        #wireframe-lg .box img,
+        #wireframe-sm .box img {
+            width: 100%;
+        }
+
+        #wireframe-sm .box {
+            margin-right: 20px;
+        }
+
+        #wireframe-lg .box {
+            margin-left: 20px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .typography .box {
+                padding: 2em;
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #000;
+            color: #eaeaea;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Group 06
+        </div>
+    </header>
+
+    <main>
+        <h1>Style Guide | WDD 331</h1>
+
+
+
+        <section id="purpose" class="purpose">
+            <h2>Theme</h2>
+
+            <div class="box">
+                <p>The theme of our CSS Zen Garden will be something minimalistic. We have some great ideas on how to
+                    present a webpage as well as how some of the elements on the page should be displayed.
+                </p>
+                <p>
+                    Our typeface should be a cursive for the headings and a sans serif for the body. We have chosen to
+                    use the Open Sans (sans serif) and Rancho (cursive) fonts throughout this project.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="typography" class="typography">
+            <h2>Typography</h2>
+
+            <div class="box">
+                <p>We have chosen the open sans font as it is elegant and sophisticated, yet modern. It is beautifully
+                    legible, offers an excellent reading experience, and has a superior typographic range that includes
+                    accents, non-Latin characters, and more.</p>
+                <p> 1 - Open Sans : body text.</p>
+                <p> 2 - Rancho : headings</p>
+            </div>
+        </section>
+
+
+
+
+        <section id="colors" class="colors">
+            <h2>Colors</h2>
+            <ul>
+                <li class="box">
+                    <div class="color-swatch"></div>
+                </li>
+
+                <li class="box">
+                    <div class="color-swatch"></div>
+                </li>
+
+                <li class="box">
+                    <div class="color-swatch"></div>
+                </li>
+
+                <li class="box">
+                    <div class="color-swatch"></div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="wireframe-sm" class="wireframes">
+            <h2>Small screen wireframe</h2>
+            <div class="box">
+                <figure>
+                    <img src="./wireframe-sm.png" alt="Small screen wireframe">
+                </figure>
+            </div>
+        </section>
+
+        <section id="wireframe-lg" class="wireframes">
+            <h2>Large screen wireframe</h2>
+            <div class="box">
+                <figure>
+                    <img src="./wireframe-lg.png" alt="Large screen wireframe">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2022 Group 06 | Samuel Jonathan | Daphne Avril Museruka | Ange Konan Kouadio
+            </div>
+        </div>
+</body>
+
+</html>
